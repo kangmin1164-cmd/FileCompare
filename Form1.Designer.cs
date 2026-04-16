@@ -35,10 +35,10 @@
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             panel2 = new Panel();
-            btnCopyFromLeft = new Button();
+            btnLeftDir = new Button();
             txtLeftDir = new TextBox();
             panel1 = new Panel();
-            btnLeftDir = new Button();
+            btnCopyFromLeft = new Button();
             lblAppname = new Label();
             panel6 = new Panel();
             lvwRightDir = new ListView();
@@ -46,10 +46,10 @@
             columnHeader5 = new ColumnHeader();
             columnHeader6 = new ColumnHeader();
             panel5 = new Panel();
-            btnCopyFromRight = new Button();
+            btnRightDir = new Button();
             txtRightDir = new TextBox();
             panel4 = new Panel();
-            btnRightDir = new Button();
+            btnCopyFromRight = new Button();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -122,7 +122,7 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(btnCopyFromLeft);
+            panel2.Controls.Add(btnLeftDir);
             panel2.Controls.Add(txtLeftDir);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 92);
@@ -130,15 +130,16 @@
             panel2.Size = new Size(393, 92);
             panel2.TabIndex = 1;
             // 
-            // btnCopyFromLeft
+            // btnLeftDir
             // 
-            btnCopyFromLeft.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnCopyFromLeft.Location = new Point(297, 28);
-            btnCopyFromLeft.Name = "btnCopyFromLeft";
-            btnCopyFromLeft.Size = new Size(93, 34);
-            btnCopyFromLeft.TabIndex = 2;
-            btnCopyFromLeft.Text = "폴더선택";
-            btnCopyFromLeft.UseVisualStyleBackColor = true;
+            btnLeftDir.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnLeftDir.Location = new Point(297, 28);
+            btnLeftDir.Name = "btnLeftDir";
+            btnLeftDir.Size = new Size(93, 34);
+            btnLeftDir.TabIndex = 2;
+            btnLeftDir.Text = "폴더선택";
+            btnLeftDir.UseVisualStyleBackColor = true;
+            btnLeftDir.Click += btnLeftDir_Click;
             // 
             // txtLeftDir
             // 
@@ -151,7 +152,7 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(btnLeftDir);
+            panel1.Controls.Add(btnCopyFromLeft);
             panel1.Controls.Add(lblAppname);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -159,16 +160,15 @@
             panel1.Size = new Size(393, 92);
             panel1.TabIndex = 0;
             // 
-            // btnLeftDir
+            // btnCopyFromLeft
             // 
-            btnLeftDir.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnLeftDir.Location = new Point(329, 34);
-            btnLeftDir.Name = "btnLeftDir";
-            btnLeftDir.Size = new Size(61, 34);
-            btnLeftDir.TabIndex = 3;
-            btnLeftDir.Text = ">>>";
-            btnLeftDir.UseVisualStyleBackColor = true;
-            btnLeftDir.Click += btnLeftDir_Click;
+            btnCopyFromLeft.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnCopyFromLeft.Location = new Point(329, 34);
+            btnCopyFromLeft.Name = "btnCopyFromLeft";
+            btnCopyFromLeft.Size = new Size(61, 34);
+            btnCopyFromLeft.TabIndex = 3;
+            btnCopyFromLeft.Text = ">>>";
+            btnCopyFromLeft.UseVisualStyleBackColor = true;
             // 
             // lblAppname
             // 
@@ -220,7 +220,7 @@
             // 
             // panel5
             // 
-            panel5.Controls.Add(btnCopyFromRight);
+            panel5.Controls.Add(btnRightDir);
             panel5.Controls.Add(txtRightDir);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 92);
@@ -228,15 +228,16 @@
             panel5.Size = new Size(403, 92);
             panel5.TabIndex = 2;
             // 
-            // btnCopyFromRight
+            // btnRightDir
             // 
-            btnCopyFromRight.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnCopyFromRight.Location = new Point(310, 31);
-            btnCopyFromRight.Name = "btnCopyFromRight";
-            btnCopyFromRight.Size = new Size(93, 34);
-            btnCopyFromRight.TabIndex = 3;
-            btnCopyFromRight.Text = "폴더선택";
-            btnCopyFromRight.UseVisualStyleBackColor = true;
+            btnRightDir.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnRightDir.Location = new Point(310, 31);
+            btnRightDir.Name = "btnRightDir";
+            btnRightDir.Size = new Size(93, 34);
+            btnRightDir.TabIndex = 3;
+            btnRightDir.Text = "폴더선택";
+            btnRightDir.UseVisualStyleBackColor = true;
+            btnRightDir.Click += btnRightDir_Click;
             // 
             // txtRightDir
             // 
@@ -249,21 +250,21 @@
             // 
             // panel4
             // 
-            panel4.Controls.Add(btnRightDir);
+            panel4.Controls.Add(btnCopyFromRight);
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
             panel4.Size = new Size(403, 92);
             panel4.TabIndex = 1;
             // 
-            // btnRightDir
+            // btnCopyFromRight
             // 
-            btnRightDir.Location = new Point(3, 34);
-            btnRightDir.Name = "btnRightDir";
-            btnRightDir.Size = new Size(61, 34);
-            btnRightDir.TabIndex = 4;
-            btnRightDir.Text = "<<<";
-            btnRightDir.UseVisualStyleBackColor = true;
+            btnCopyFromRight.Location = new Point(3, 34);
+            btnCopyFromRight.Name = "btnCopyFromRight";
+            btnCopyFromRight.Size = new Size(61, 34);
+            btnCopyFromRight.TabIndex = 4;
+            btnCopyFromRight.Text = "<<<";
+            btnCopyFromRight.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -297,15 +298,15 @@
         private Panel panel1;
         private Panel panel5;
         private Panel panel4;
-        private Button btnCopyFromLeft;
+        private Button btnLeftDir;
         private TextBox txtLeftDir;
         private Label lblAppname;
         private Panel panel6;
         private TextBox txtRightDir;
-        private Button btnCopyFromRight;
-        private ListView lvwLeftDir;
-        private Button btnLeftDir;
         private Button btnRightDir;
+        private ListView lvwLeftDir;
+        private Button btnCopyFromLeft;
+        private Button btnCopyFromRight;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;

@@ -4,9 +4,16 @@ namespace FileCompare
     {
         public Form1()
         {
-            InitializeComponent();
+
         }
+
+
         private void btnLeftDir_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnRightDir_Click(object sender, EventArgs e)
         {
             
         }
