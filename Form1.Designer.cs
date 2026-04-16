@@ -147,7 +147,7 @@
             txtLeftDir.Font = new Font("한컴 고딕", 10F, FontStyle.Bold, GraphicsUnit.Point, 129);
             txtLeftDir.Location = new Point(3, 31);
             txtLeftDir.Name = "txtLeftDir";
-            txtLeftDir.Size = new Size(295, 33);
+            txtLeftDir.Size = new Size(288, 33);
             txtLeftDir.TabIndex = 1;
             // 
             // panel1
@@ -246,7 +246,7 @@
             txtRightDir.Font = new Font("한컴 고딕", 10F, FontStyle.Bold, GraphicsUnit.Point, 129);
             txtRightDir.Location = new Point(3, 31);
             txtRightDir.Name = "txtRightDir";
-            txtRightDir.Size = new Size(307, 33);
+            txtRightDir.Size = new Size(301, 33);
             txtRightDir.TabIndex = 2;
             // 
             // panel4
